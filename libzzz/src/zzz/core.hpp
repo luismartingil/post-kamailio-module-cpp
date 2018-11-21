@@ -4,6 +4,11 @@
 #ifndef ZZZ_CORE_HPP
 #define ZZZ_CORE_HPP
 
+#include <cstring>
+#include <iostream>
+
+using namespace std;
+
 namespace zzz {
 
   class core {
