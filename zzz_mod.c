@@ -121,7 +121,7 @@ static int get_incremented_number_mod_f (struct sip_msg *msg,
   dst_pv = (pv_spec_t *)result;
 
   // Accessing our c-library-interface incremented function
-  dst_val.ri = get_incremented_number_mod(core);
+  dst_val.ri = get_incremented_number(core);
   dst_val.flags = PV_TYPE_INT|PV_VAL_INT;
   dst_pv->setf(msg, &dst_pv->pvp, (int)EQ_T, &dst_val);
   LM_INFO("Returning maintenance message value to cfg script\n");
